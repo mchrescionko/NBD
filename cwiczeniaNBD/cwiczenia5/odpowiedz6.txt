@@ -1,0 +1,6 @@
+HTTP/1.1 204 No Content
+Vary: Accept-Encoding
+Server: MochiWeb/1.1 WebMachine/1.10.9 (cafe not found)
+Date: Sat, 08 Jan 2022 17:14:12 GMT
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 0                                                                           * Connection #1 to host localhost left intact

@@ -1,0 +1,10 @@
+{ _id: 'Female',
+  value: 
+   { count: 4925,
+     height: 166.81260913705572,
+     weight: 70.11331573604069 } }
+{ _id: 'Male',
+  value: 
+   { count: 4954,
+     height: 166.74408760597512,
+     weight: 70.0150100928543 } }

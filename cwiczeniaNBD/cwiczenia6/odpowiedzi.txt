@@ -1,0 +1,7 @@
+dodano osobe
+pobrano osobe: {"name": "Maciej","surname": "Chrescionko"}
+zaktualizowano osobe
+osoba: {"name": "Maciej","surname": "Nowak"}
+osoba usunieta
+brak
+None

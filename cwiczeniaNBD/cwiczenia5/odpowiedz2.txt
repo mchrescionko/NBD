@@ -1,0 +1,12 @@
+HTTP/1.1 200 OK
+X-Riak-Vclock: a85hYGBgzGDKBVI8+xkWvtf7ovUXIpTImMfK8NLS7zZfFgA=
+Vary: Accept-Encoding
+Server: MochiWeb/1.1 WebMachine/1.10.9 (cafe not found)
+Link: </buckets/s23785>; rel="up"
+Last-Modified: Sat, 08 Jan 2022 16:38:01 GMT
+ETag: "3SyOV6PLjKPfSDodvtURTc"
+Date: Sat, 08 Jan 2022 16:52:43 GMT
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 46
+
+'{name:Adam,lastname:Nowak,money:5100,age:25}'                                                                                                       * Connection #1 to host localhost left intact

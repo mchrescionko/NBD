@@ -1,0 +1,33 @@
+curl -i -v -XPUT -d '{"name":"Maciej","lastname":"Chrescionko","money":1000,"age":"20"}' -H 'Content-Type: application/json' http://localhost:8098/buckets/s23785/keys/1 
+curl -i -v -XPUT -d '{"name":"Jan","lastname":"Kowalski","money":1500,"age":"25"}' -H 'Content-Type: application/json' http://localhost:8098/buckets/s23785/keys/2
+curl -i -v -XPUT -d '{"name":"Dominik","lastname":"Jasnowski","money":10,"age":"25"}' -H 'Content-Type: application/json' http://localhost:8098/buckets/s23785/keys/3 
+curl -i -v -XPUT -d '{"name":"Bogdan","lastname":"Komier","money":500,"age":"25"}' -H 'Content-Type: application/json' http://localhost:8098/buckets/s23785/keys/4 
+curl -i -v -XPUT -d '{"name":"Adam","lastname":"Nowak","money":5100,"age":"25"}' -H 'Content-Type: application/json' http://localhost:8098/buckets/s23785/keys/5 
+
+2.
+curl -i http://localhost:8098/buckets/s23785/keys/5
+
+3.
+curl -i -v -XPUT -d '{"name":"Adam","lastname":"Nowak","money":5100,"age":"25","height":190}' -H 'Content-Type: application/json' http://localhost:8098/buckets/s23785/keys/5 
+
+4.
+curl -i -v -XPUT -d '{"name":"Adam","lastname":"Nowak","money":5100,"height":190}' -H 'Content-Type: application/json' http://localhost:8098/buckets/s23785/keys/5 
+
+5.
+curl -i -v -XPUT -d '{"name":"Adam","lastname":"Nowak","money":40,"age":"25","height":190}' -H 'Content-Type: application/json' http://localhost:8098/buckets/s23785/keys/5
+
+6.
+curl -i -X DELETE http://localhost:8098/buckets/s23785/keys/5
+
+7.
+curl -i http://localhost:8098/buckets/s23785/keys/5
+
+8.
+curl -i -X POST http://localhost:8098/buckets/s23785/keys -H 'Content-Type: application/json' -d '{"field": "fieldname"}'
+
+9.
+curl -i http://localhost:8098/buckets/s23785/keys/YfhZpWBETFZ8v6Hn820pZrpQh43
+
+10.
+curl -i -X DELETE http://localhost:8098/buckets/s23785/keys/YfhZpWBETFZ8v6Hn820pZrpQh43
+

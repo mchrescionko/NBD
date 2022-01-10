@@ -1,0 +1,6 @@
+{ _id: 'Female',
+  avg_height: 166.81260913705583,
+  avg_weight: 70.11331573604062 }
+{ _id: 'Male',
+  avg_height: 166.74408760597495,
+  avg_weight: 70.01501009285425 }

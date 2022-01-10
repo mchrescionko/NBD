@@ -1,0 +1,16 @@
+printjson(db.people.insertOne({sex:"Male", 
+first_name:"Maciej", 
+last_name:"Chrescionko",
+job: "company owner",
+email:"s23785@pjwstk.edu.pl", 
+location:{city:"Warszawa", address:"blabla 10"},
+description: "whats up buddy", 
+height:"190", 
+weight:"83",
+birth_date:"1997-04-24T12:20:00Z",
+nationality:"Poland",
+credit:[{type:"job",
+  number:"3451302133450234",
+  currency:"PLN",
+  balance:"334567850"
+}]}).toArray())

@@ -1,0 +1,25 @@
+1. MATCH path = shortestPath((p1:town {name:"Darjeeling"})-[*]->(p2:peak {name:"Sandakphu"})) 
+RETURN path
+
+2. MATCH shortestpath = shortestPath((p1:town{name: "Darjeeling" })-[*]-(p2:peak{ name:"Sandakphu" })) 
+WHERE ALL(shortestpath IN relationships(shortestpath) WHERE shortestpath.winter = "true")
+RETURN shortestpath
+
+3. MATCH paths=(p1:town {name:"Darjeeling"})-[r*]->(p2:peak {name:"Sandakphu"})
+RETURN paths, reduce(dis = 0, rel IN relationships(paths)| dis + rel.distance) as distance
+order by distance
+
+MATCH (p1: town{name:"Darjeeling"})-[r:twowheeler{summer:"true"}] -(p2)
+RETURN p2
+
+4.
+MATCH (p1:Flight)-[:ORIGIN]->(p2:Airport)
+RETURN p2.name, count(p1) 
+ORDER BY count(p1) DESC
+
+5.
+MATCH airport=(p1:Airport)<-[r1:CHEAPEST_FLIGHT*1..6]-(p2:Airport {name: "LAX"}), ()-[origin:ORIGIN]->(p2:Airport ) 
+WITH airport,p1, reduce(totalPrice=0, rel IN relationships(airport)|totalPrice + rel.price) as cost WHERE cost < 3000 
+RETURN distinct p1
+
+6.

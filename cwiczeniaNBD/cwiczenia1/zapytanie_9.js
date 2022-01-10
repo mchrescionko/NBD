@@ -1,0 +1,1 @@
+db.people.updateMany({first_name:"Antonio"},{$set:{Hobby:"pingpong"}})

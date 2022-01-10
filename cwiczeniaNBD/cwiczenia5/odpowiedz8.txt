@@ -1,0 +1,10 @@
+HTTP/1.1 201 Created
+Vary: Accept-Encoding
+Server: MochiWeb/1.1 WebMachine/1.10.9 (cafe not found)
+Location: /buckets/s23785/keys/YfhZpWBETFZ8v6Hn820pZrpQh43
+Date: Sat, 08 Jan 2022 17:17:47 GMT
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 0
+
+curl: (6) Could not resolve host: application
+curl: (3) [globbing] unmatched close brace/bracket in column 10                                                    * Connection #1 to host localhost left intact
